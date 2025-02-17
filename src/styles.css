@@ -1,1 +1,428 @@
-/* You can add global styles to this file, and also import other style files */
+.content_Home {
+  text-align: center;
+}
+
+.slogan_content {
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  color: black;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.slogan_content h4 {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.slogan_content:hover {
+  transform: translateY(-20px) scale(1.1); /* Kết hợp cả hai hiệu ứng */
+  transition: all 1s; /* Thời gian chuyển tiếp */
+  background-color: black;
+  color: white;
+}
+.slogan_content:not(hover) {
+  transform: translateY(20px) scale(1); /* Kết hợp cả hai hiệu ứng */
+  transition: all 1s; /* Thời gian chuyển tiếp */
+  background-color: white;
+  color: black;
+}
+
+.banner {
+  position: relative;
+}
+.banner {
+  height: 100%;
+}
+
+@keyframes moAnh {
+  0% {
+    filter: blur(0px); /* Bắt đầu với độ rõ */
+  }
+  10% {
+    filter: blur(1px);
+  }
+  20% {
+    filter: blur(2px);
+  }
+  30% {
+    filter: blur(3px);
+  }
+  40% {
+    filter: blur(4px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  60% {
+    filter: blur(6px);
+  }
+  70% {
+    filter: blur(7px);
+  }
+  80% {
+    filter: blur(8px);
+  }
+  90% {
+    filter: blur(9px);
+  }
+  100% {
+    filter: blur(10px); /* Kết thúc với độ mờ tối đa */
+  }
+}
+@keyframes roAnh {
+  0% {
+    filter: blur(10px); /* Làm mờ hình ảnh */
+  }
+  10% {
+    filter: blur(9px);
+  }
+  20% {
+    filter: blur(8px);
+  }
+  30% {
+    filter: blur(7px);
+  }
+  40% {
+    filter: blur(6px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  60% {
+    filter: blur(4px);
+  }
+  70% {
+    filter: blur(3px);
+  }
+  80% {
+    filter: blur(2px);
+  }
+  90% {
+    filter: blur(1px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+.nav-link:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+}
+
+.c_tent {
+  font-size: larger;
+  border-bottom: solid white 5px;
+  border-right: solid white 5px;
+  text-align: right;
+  font-size: 3vw;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: darkgrey;
+  width: 100%;
+  height: 100%;
+  padding-top: 48%;
+  padding-right: 2%;
+  opacity: 20%;
+}
+.c_tent h1 {
+  font-size: 6vw;
+}
+.gap {
+  background-color: white;
+  height: 5px;
+}
+.product {
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+.product img {
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;
+  border: 10px solid transparent; /* Đường viền cần phải đặt là transparent */
+  border-image: linear-gradient(to right, white, black) 0.1;
+}
+.pro_list {
+  padding-top: 5%;
+}
+#soundToggle {
+  position: fixed;
+  top: 70px;
+  right: 20px;
+}
+.product:hover img {
+  transform: scale(1.05);
+  transition: all 1s;
+  box-shadow: 0 -20px 50px rgba(255, 255, 255, 0.7),
+    /* Hào quang phía trên khi hover */ -20px 0 50px rgba(255, 255, 255, 0.7),
+    /* Hào quang phía trái khi hover */ 20px 0 50px rgba(255, 255, 255, 0.7); /* Hào quang phía phải khi hover */
+}
+.product:not(:hover) img {
+  transform: scale(1);
+  transition: all 1s;
+}
+.product:hover {
+  cursor: pointer;
+}
+.product:hover a {
+  transform: translateY(-20px);
+  transition: all 1s;
+}
+.product:not(hover) a {
+  transform: translateY(20px);
+  transition: all 1s;
+}
+.product:hover h5 {
+  transition: all 1s;
+  color: black;
+  transform: scale(1.2);
+  transform: translateY(-50px);
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+.product:not(:hover) h5 {
+  transition: all 1s;
+  transform: scale(1);
+  transform: translateY(0px);
+  opacity: 70%;
+}
+.product span {
+  color: gold;
+}
+.product:hover span {
+  color: chocolate;
+}
+.brands {
+  text-align: center;
+  padding-top: 5%;
+}
+.shortcut {
+  height: 110px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  border: solid black;
+}
+.shortcutLambor {
+  padding-top: 40px;
+  height: 110px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 280px;
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  border: solid black;
+}
+.shortcutMes {
+  padding-top: 40px;
+  height: 110px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 410px;
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  border: solid black;
+}
+.shortcutBack {
+  padding-top: 10px;
+  height: 70px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-decoration: none;
+  text-align: center;
+  width: 80px;
+  border: solid black;
+}
+.shortcutBrands {
+  padding-top: 40px;
+  height: 110px;
+  border-radius: 10px;
+  position: fixed;
+  bottom: 20px;
+  left: 150px;
+  text-decoration: none;
+  text-align: center;
+  width: 120px;
+  border: solid black;
+}
+/* Hiệu ứng xóa  */
+.fadeOut {
+  animation: fadeOut 2s forwards; /* Áp dụng animation khi ẩn */
+}
+.fadeIn {
+  animation: fadeIn 2s forwards; /* Áp dụng animation khi ẩn */
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1; /* Bắt đầu với độ mờ 1 */
+  }
+  100% {
+    opacity: 0; /* Kết thúc với độ mờ 0 */
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Bắt đầu với độ mờ 0 */
+  }
+  100% {
+    opacity: 1; /* Kết thúc với độ mờ 1 */
+  }
+}
+.Brands_area {
+  width: 30%;
+  height: 30%;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background-color: aquamarine;
+  z-index: 999px;
+}
+.brands_ct {
+  position: absolute;
+  list-style-type: none;
+}
+.brands_ct a {
+  font-size: 5vh;
+  text-decoration: none;
+}
+.brands_pannel a {
+  text-decoration: none;
+}
+.brands_pannel li {
+  list-style-type: none;
+}
+.brands_pannel {
+  background-color: black;
+}
+
+#sc {
+  opacity: 70%;
+}
+#sc:hover {
+  transition: all 1s;
+  opacity: 100%;
+}
+
+
+/*  */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  font-family: inherit;
+  gap: 10px;
+  padding-inline: 2em;
+  padding-bottom: 0.4em;
+  background-color: #171717;
+  
+  border-radius: 20px;
+}
+
+.form-heading {
+  text-align: center;
+  margin: 2em;
+  color: #64ffda;
+  font-size: 1.2em;
+  background-color: transparent;
+  align-self: center;
+}
+
+.form-field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  border-radius: 10px;
+  padding: 0.6em;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #171717;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.input-field {
+  background: none;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: white;
+  padding-inline: 1em;
+}
+
+.sendMessage-btn {
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #64ffda;
+  font-weight: bold;
+  outline: 1px solid #64ffda;
+  transition: all ease-in-out 0.3s;
+}
+.sendMessage-btn2 {
+  cursor: pointer;
+  padding: 1em;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: red;
+  font-weight: bold;
+  outline: 1px solid red;
+  transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: #64ffda;
+  color: #000;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+.sendMessage-btn2:hover {
+  transition: all ease-in-out 0.3s;
+  background-color: red;
+  color: #000;
+  cursor: pointer;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+  background-image: linear-gradient(163deg, #64ffda 0%, #64ffda 100%);
+  border-radius: 22px;
+  transition: all 0.3s;
+}
+
+.form-card1:hover {
+  box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+
+.form-card2 {
+  border-radius: 0;
+  transition: all 0.2s;
+}
+
+.form-card2:hover {
+  transform: scale(0.98);
+  border-radius: 20px;
+}

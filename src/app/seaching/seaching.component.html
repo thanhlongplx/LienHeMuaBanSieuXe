@@ -1,0 +1,65 @@
+<div
+  class="container-fluid bg-dark "
+  style="background-color: black; position: relative"
+  
+>
+  <input
+
+    type="text"
+    [(ngModel)]="searching"
+    aria-label="Search"
+    type="search"
+    id="submitButton"
+    style="
+      position: fixed;
+
+      top: 8%;
+      right: 6.95%;
+      width: 50%;
+      z-index: 9999;
+      border-radius: 30px;
+    "
+    placeholder="Seaching"
+    class="text-black input form-control me-2 "
+  />
+  <button
+    id="submitButton"
+    class="btn text-secondary text-white"
+    type="submit"
+    style="
+      border-radius: 30px;
+      position: fixed;
+
+      top: 8%;
+      right: 2.5%;
+
+      z-index: 9999;
+    "
+  >
+    Search
+  </button>
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-4" *ngFor="let item of filterName()">
+      <div class="product text-center" style="height: 100%">
+        <div class="">{{ item.name }}</div>
+        <div class="card-body">
+          <a [href]="item.image" target="_blank">
+            <img
+              [src]="item.image"
+              alt="productIMG"
+              style="width: 100%; height: 250px"
+            />
+          </a>
+        </div>
+        <h5 class="mt-2">
+          Price:
+          <span style="font-size: larger">{{
+            item.price | currency : "B"
+          }}</span>
+        </h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+

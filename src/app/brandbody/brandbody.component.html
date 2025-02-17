@@ -1,0 +1,70 @@
+<div class="container-fluid bg-dark">
+  <!-- Tìm kiếm sản phẩm -->
+  
+
+  <!-- Chọn danh mục -->
+  <select  
+    [(ngModel)]="selectedCategory" 
+    (change)="updateFilteredItems()" 
+    class="form-select mb-3"
+    style="max-width: 300px; margin: auto; position: fixed; top: 10%;right: 10%; z-index: 9999;"
+  >
+    <option value="">All</option>
+    <option value="Lamborghini">Lamborghini</option>
+    <option value="Audi">Audi</option>
+  </select>
+
+  <!-- Thông báo thành công -->
+  <div *ngIf="successMessage" class="alert alert-success" style="text-align: center;">
+    {{ successMessage }}
+  </div>
+
+  <!-- Chia row cho danh mục Lamborghini -->
+  
+
+  <div class="pro_list row">
+    <div class="container-fluid bg-dark w-100">
+      <div class="row pro_list">
+        <div 
+          class="col-xl-4 col-md-6 position-relative" 
+          *ngFor="let item of filteredItems; let i = index"
+          [hidden]="item.name !== 'Lamborghini' && selectedCategory === 'Lamborghini'"
+        >
+          <div class="product animate__animated animate__fadeIn ">
+            <a [href]="item.image" target="_blank"><img [src]="item.image" alt="ảnh siêu xe" width="100%" /></a>
+            <h5>
+              {{ item.name }}<br />
+              Price: <span style="font-size: larger">{{ item.price }}</span>
+            </h5>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Kết thúc chia row cho Lamborghini -->
+
+  <!-- Chia row cho Audi -->
+  
+  <!-- <div class="pro_list row">
+    <div class="container-fluid bg-dark w-100">
+      <div class="row pro_list">
+        <div 
+          class="col-xl-4 col-md-6 position-relative" 
+          *ngFor="let item of filteredItems; let i = index"
+          [hidden]="item.name !== 'Audi' && selectedCategory === 'Audi'"
+        >
+          <div class="product">
+            <img [src]="item.image" alt="ảnh siêu xe" width="100%" />
+            <h5>
+              {{ item.name }}<br />
+              Price: <span style="font-size: larger">{{ item.price }}</span>
+            </h5>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <!-- Kết thúc chia row cho Audi -->
+</div>

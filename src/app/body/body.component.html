@@ -1,0 +1,188 @@
+
+
+<div class="container-fluid bg-dark w-100 
+">
+  <h1 style="text-align: center; color: white">Luxurious - Outstanding</h1>
+
+  <div class="row pro_list">
+    <div class="col-xl-4 col-md-6" *ngFor="let car of cars">
+      
+      <div class="product position-relative animate__animated animate__zoomInDown">
+        <img [src]="car.image" alt="ảnh siêu xe" width="100%" />
+        <h5>
+          {{ car.name }}<br />
+          Price: <span style="font-size: larger">{{ car.price }}</span>
+        </h5>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<app-brandbody></app-brandbody>
+<div class="d-block">
+        
+
+        <i
+          type="button"
+          id="soundToggle"
+          style="z-index: 999; margin-top: 100px; width: 100px; height: -30px"
+          class="btn sendMessage-btn position-fixed;"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Log in<br />Sign in
+        </i>
+      </div>
+
+      <!-- Login -->
+      <!-- Button trigger modal -->
+
+      <!-- Modal -->
+      <div
+        class="modal fade animate__animated animate__zoomInDown"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="z-index: 99999;"
+
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark">
+
+            <div class="modal-body">
+              <div class="form-card1">
+                <div class="form-card2">
+                  <form class="form">
+                    <p class="form-heading">LOG IN</p>
+
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Name"
+                        class="input-field"
+                        type="text"
+                      />
+                    </div>
+
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Password"
+                        class="input-field"
+                        type="Password"
+                      />
+                    </div>
+
+                    <button class="sendMessage-btn">Log in</button>
+                    <button class="sendMessage-btn2">Forgot password</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="sendMessage-btn2"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <i
+                type="button"
+                class="sendMessage-btn text-center"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2"
+              >
+                Sign in
+              </i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Login -->
+
+      <!-- Sign in -->
+      <div
+        class="modal fade animate__animated animate__zoomInUp"
+        id="exampleModal2"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+        style="z-index: 999999;"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-dark">
+            <div class="modal-body">
+              <div class="form-card1">
+                <div class="form-card2">
+                  <form class="form">
+                    <p class="form-heading">SIGN IN</p>
+
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Name"
+                        class="input-field"
+                        type="text"
+                      />
+                    </div>
+
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Email"
+                        class="input-field"
+                        type="email"
+                      />
+                    </div>
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Password"
+                        class="input-field"
+                        type="text"
+                      />
+                    </div>
+                    <div class="form-field">
+                      <input
+                        required=""
+                        placeholder="Confirm Password"
+                        class="input-field"
+                        type="text"
+                      />
+                    </div>
+
+                    <button class="sendMessage-btn">Sign in</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="sendMessage-btn2"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                class="sendMessage-btn"
+              >
+                Log in
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sign in -->
+
+
+
+
+

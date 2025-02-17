@@ -1,0 +1,66 @@
+body {
+  background-color: #121212; /* Màu nền tối để tạo sự sang trọng */
+}
+
+.card {
+  background-color: #1e1e1e; /* Màu nền thẻ tối */
+  border: 1px solid #333; /* Đường viền nhẹ */
+  border-radius: 8px; /* Bo tròn các góc */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Thêm shadow vào hover */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Thêm bóng khi hover */
+}
+
+.btn-custom {
+    background-color: #4a90e2; /* Màu xanh dương sang trọng */
+    border: 1px solid #007bff; /* Đường viền màu xanh sáng */
+    color: #ffffff; /* Màu chữ trắng */
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    padding: 10px 20px; /* Padding cho nút */
+    border-radius: 5px; /* Bo tròn các góc của nút */
+    font-weight: bold; /* Chữ đậm để nổi bật hơn */
+    font-size: 1rem; /* Kích thước chữ lớn hơn */
+}
+
+.btn-custom:hover {
+    background-color: #007bff; /* Màu xanh sáng hơn khi hover */
+    border-color: #0056b3; /* Đường viền màu xanh đậm hơn */
+    color: #ffffff; /* Giữ màu chữ trắng khi hover */
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+  opacity: 0.9; /* Tăng độ mờ khi hover */
+}
+
+.card-header {
+  text-align: center;
+  background-color: #343a40; /* Màu nền thẻ tiêu đề */
+  color: #ffffff; /* Màu chữ trắng */
+  padding: 10px; /* Padding cho tiêu đề */
+  border-top-left-radius: 8px; /* Bo tròn góc trên bên trái */
+  border-top-right-radius: 8px; /* Bo tròn góc trên bên phải */
+}
+
+.card-body {
+  background-color: #2c2c2c; /* Màu nền thẻ body */
+  color: #f8f9fa; /* Màu chữ sáng */
+  padding: 20px; /* Padding cho thẻ body */
+}
+
+ul {
+  list-style-type: none; /* Xóa dấu chấm của danh sách */
+  padding: 0; /* Xóa padding mặc định */
+}
+
+ul li {
+  margin-bottom: 10px; /* Khoảng cách giữa các item */
+}
