@@ -10,7 +10,7 @@ Used: HTML, CSS, Bootstrap, Typescript, Angular,...
 
 # **How to run this web**
 
--Access to root directory, on terminal, run "ng serve". 
+- Access to root directory, on terminal, run "ng serve". 
 
 # **Interface**
 
