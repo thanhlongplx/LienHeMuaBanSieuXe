@@ -1,27 +1,22 @@
-# LienHeMuaBanSieuXe
+# **About LienHeMuaBanSieuXe**
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
+Used: HTML, CSS, Bootstrap, Typescript, Angular,...
 
-## Development server
+# **Target of Lien He Mua Ban Sieu Xe**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Connect with comunity and suport them to contact lots of brands of Super Cars and more.
+- Link to contact page of Super Car brands website.
+- Built the luxury interface for customer.
 
-## Code scaffolding
+# **How to run this web**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+-Access to root directory, on terminal, run "ng serve". 
 
-## Build
+# **Interface**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Home: ![image](https://github.com/user-attachments/assets/da7ac44d-2d1f-4cb8-9986-80177280c41b)
+- Brands: ![image](https://github.com/user-attachments/assets/c084730e-1512-48e7-bfef-fbd3a253daba)
+- Instructions: ![image](https://github.com/user-attachments/assets/67eef335-2b48-43ed-9f31-9543f0b43756)
+- Login: ![image](https://github.com/user-attachments/assets/6a5552a8-348b-4301-bed9-54594dba0358)
+- Register: ![image](https://github.com/user-attachments/assets/ad97c257-72f5-4359-8cea-19202d19f383)
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
